@@ -81,8 +81,9 @@ public class Easy_Array {
         }
 
         Easy_Array object=new Easy_Array();
-        object.display();
-        while(choice!=0) {
+
+        while(true) {
+            object.display();
             switch (choice) {
                 case 1:
                     object.max_element(arr);
