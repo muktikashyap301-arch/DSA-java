@@ -1,3 +1,5 @@
+package Day_1;
+
 public class Prefix_Sum {
     static int[] createPrefixSum(int[] arr){
         int[] prefix=new int[arr.length];

@@ -1,3 +1,5 @@
+package Day_1;
+
 public class Difference_Array {
 
     static void updateDiff(int[]diff,int L, int R ,int num){
