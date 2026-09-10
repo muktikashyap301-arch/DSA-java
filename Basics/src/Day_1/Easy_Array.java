@@ -17,7 +17,7 @@ public class Easy_Array {
         System.out.println("Maximum element of the entered array is : "+max);
     }
 
-    void mix_element(int [] arr){
+    void min_element(int [] arr){
         int min=arr[0];
         for(int i=1;i<size;i++){
             if(min>arr[i])
@@ -36,15 +36,21 @@ public class Easy_Array {
 
     void count_Odd_And_Even(int[] arr){
         int sum_Even=0;
+        int count_Even=0;
+        int count_Odd=0;
         int sum_Odd=0;
         for(int i=0;i<size;i++){
-            if(arr[i]%2==0)
-                sum_Even+=arr[i];
-            else
-                sum_Odd+=arr[i];
+            if(arr[i]%2==0) {
+                sum_Even += arr[i];
+                count_Even++;
+            }
+            else {
+                sum_Odd += arr[i];
+                count_Odd++;
+            }
         }
-        System.out.println("Sum of all the even elements of the entered array : "+sum_Even);
-        System.out.println("Sum of all the odd elements of the entered array : "+sum_Odd);
+        System.out.println("Sum and count of all the even elements of the entered array : "+sum_Even +" & "+count_Even + " respectively");
+        System.out.println("Sum and count of all the odd elements of the entered array : "+sum_Odd+" & "+count_Odd + " respectively");
     }
 
     void count_Positive_And_Negative(int[] arr){
@@ -91,7 +97,7 @@ public class Easy_Array {
                     object.max_element(arr);
                     break;
                 case 2:
-                    object.mix_element(arr);
+                    object.min_element(arr);
                     break;
                 case 3:
                     object.SumOfAllElements(arr);
